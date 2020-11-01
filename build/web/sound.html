@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head><title>Sound Effect</title></head>
+<script type=text/javascript">
+var bleep=new Audio();
+bleep.src="sound.mp3";
+function load(num){
+bleep.play();
+var div1=document.getElementById("div1");
+div1.innerHTML="Loaded content for section"+num;
+}
+</script>
+<body>
+<button onclick="load(1)">Sound</button>
+<div style="background-color:red" onclick="load(2)">Me</div>
+</body>
+</html>
